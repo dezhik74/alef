@@ -10,6 +10,8 @@ export default async function getDataFromAPI() {
     thumbs: [],
     leftImage: leftImage,
   };
+  // const ms = import.meta.globEager("../assets/img/thumbs/*.png");
+  // for (const path in ms) data.thumbs.push(ms[path].default);
   for (let img of [t1, t2, t3, t4, t5]) data.thumbs.push(img);
   data.name = "Пижама для девочек";
   data.articul = "02765/46";
